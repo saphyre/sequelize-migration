@@ -1,0 +1,37 @@
+{
+  "name": "sequelize-migration",
+  "version": "1.0.0",
+  "description": "Sequelize Migration Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- test -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saphyre/sequelize-migration.git"
+  },
+  "keywords": [
+    "sequelize",
+    "migration"
+  ],
+  "author": "Sérgio Marcelino <sergiofilhow@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saphyre/sequelize-migration/issues"
+  },
+  "homepage": "https://github.com/saphyre/sequelize-migration#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0",
+    "mysql": "^2.10.2",
+    "pg": "^4.5.5",
+    "sequelize": "^3.22.0"
+  },
+  "dependencies": {
+    "lodash": "^4.11.2"
+  }
+}

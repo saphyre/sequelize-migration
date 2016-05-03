@@ -1,0 +1,37 @@
+{
+  "module": "sequelize.migration.test",
+  "dialects": {
+    "mysql": [
+      {
+        "version" : "1.0.0",
+        "upgrade": [ "upgrade_1_0_0.sql" ]
+      },
+      {
+        "version" : "1.0.1",
+        "upgrade" : [ "upgrade_1_0_1.sql" ],
+        "downgrade" : [ "downgrade_1_0_1.sql" ]
+      },
+      {
+        "version" : "1.1.0",
+        "upgrade" : [ "upgrade_1_1_0.sql" ],
+        "downgrade" : [ "downgrade_1_1_0.sql" ]
+      }
+    ],
+    "postgres": [
+      {
+        "version" : "1.0.0",
+        "upgrade": [ "upgrade_1_0_0.sql" ]
+      },
+      {
+        "version" : "1.0.1",
+        "upgrade" : [ "upgrade_1_0_1.sql" ],
+        "downgrade" : [ "downgrade_1_0_1.sql" ]
+      },
+      {
+        "version" : "1.1.0",
+        "upgrade" : [ "upgrade_1_1_0.sql" ],
+        "downgrade" : [ "downgrade_1_1_0.sql" ]
+      }
+    ]
+  }
+}
