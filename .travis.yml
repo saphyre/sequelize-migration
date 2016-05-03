@@ -13,7 +13,6 @@ branches:
     - master
 
 env:
-  - DIALECT=sqlite
   - DIALECT=postgres DBNAME=test DBHOST=127.0.0.1 DBPORT=5432
   - DIALECT=mysql DBNAME=test DBHOST=127.0.0.1 DBPORT=3306
 
